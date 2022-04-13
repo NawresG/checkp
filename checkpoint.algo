@@ -1,0 +1,23 @@
+ALGORITHM voyelle
+VAR
+    c:CHAR :=""
+    str:STRING :=""
+    leng : INTEGER :=0
+    word: INTEGER := 1
+    vol:INTEGER := 0
+BEGIN
+   WHILE (c<>".") then
+       write("donner un char")
+       read(c)
+       str = str + c
+       leng = leng + 1
+     IF (c="A" or c="a"or c="E" or c ="e" or c="i" or c="I" or c="o" or c="O") THEN
+         vol = vol +1
+
+     END_IF
+     IF (c="") THEN
+        word=word+1
+     END_IF
+   END_WHILE
+   write("la longeur de phrase est " , len,le nbre de voy est ",voy," le nbre de mots est",word+1")
+END
